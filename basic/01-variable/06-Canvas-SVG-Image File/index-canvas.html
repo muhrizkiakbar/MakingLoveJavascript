@@ -1,0 +1,21 @@
+<html>
+  <head>
+  </head>
+  <body>
+
+    <h1>Coba dong</h1>
+
+  <script>
+    // canvas ini adalah fitur dari html5 yang menggantikan posisi flashplayer
+    var canvas = document.createElement('canvas')
+    canvas.width = 500 // ukuran canvas
+    canvas.height = 250 // ukuran canvas
+
+    var ctx = canvas.getContext('2d') // tentukan context nya (2d, webgl, webgl2, bitmaprenderer)
+    ctx.font = '30 px Cursive'
+    ctx.fillText("Hello world!", 50, 50)
+
+    document.body.appendChild(canvas)
+  </script>
+  </body>
+</html>

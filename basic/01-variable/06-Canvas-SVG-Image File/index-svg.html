@@ -1,0 +1,27 @@
+<html>
+  <head>
+  </head>
+  <body>
+
+    <h1>Coba dong</h1>
+
+  <script>
+    
+    var svg = document.createElementNS('http://www.w3.org/2000/svg','svg') // createElementNS adalah create element namespace, membuat element berdasarkan URI
+    svg.width = 500
+    svg.height = 50
+
+
+    var text = document.createElementNS('http://www.w3.org/2000/svg','text')
+    text.setAttribute('x', '0')
+    text.setAttribute('y','124')
+    text.style.fontFamily = 'Times New Roman'
+    text.style.fontSize = '50'
+    text.textContent = "Hello Bro!"
+
+    svg.appendChild(text)
+    document.body.appendChild(svg)
+
+  </script>
+  </body>
+</html>
